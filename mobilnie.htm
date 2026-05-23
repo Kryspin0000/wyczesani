@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wyczesani mobilnie</title>
+        <style>
+            
+            body {
+                margin:0;
+                padding:0;
+                
+            }
+            
+            .przyciski{
+                margin-top: 50px;
+                float: left;
+                height:50px;
+                width: 200px;
+                color:black;
+                background-color: white;
+                cursor:pointer;
+                margin-right: 30px;
+                text-decoration: none !important;
+                border:none;
+            }
+            .przyciski:hover{
+                color:orange;
+                text-decoration: none !important;
+            }
+
+            
+            .article {
+                margin: 0;
+                padding: 0;
+                align-items: center;
+                
+                color: #ffffff; 
+                width: 100%;             
+                box-sizing: border-box;  
+                overflow: hidden;        
+            }  
+            
+            .button{
+                border:none;
+            }
+
+            /* --- BEZPIECZNA POPRAWKA: Naprawia błąd z float w menu komputerowym --- */
+            #ONAS {
+                clear: both;
+            }
+
+            /* --- STYL DLA PRZYCISKU DO GÓRY --- */
+            #btnGora {
+                display: none; /* Domyślnie ukryty, JavaScript go pokaże */
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                z-index: 99;
+                border: none;
+                outline: none;
+                background-color: orange;
+                color: white;
+                cursor: pointer;
+                padding: 15px 20px;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+            #btnGora:hover {
+                background-color: #333333;
+            }
+        </style>
+    </head>
+    <body>
+        <header style="align-items: center;height: 200px;">
+            <img src="1.png" alt="Zdjęcie" style="float: left; margin:0; display: block;height: 200px;">
+            <a href="#ONAS"><button class="przyciski"><h2>O NAS</h2></button></a>
+            <a href="#PEŁNA"><button class="przyciski"><h2>PEŁNA OFERTA USŁUG</h2></button></a>
+            <a href="#FRYZURY"><button class="przyciski"><h2>FRYZURY I MAKIJAŻE OKOLICZNOŚCIOWE</h2></button></a>
+            <a href="#PREMIUM"><button class="przyciski"><h2>KOMFORT I STANDART PREMIUM</h2></button></a>
+            <a href="#USŁUGI"><button class="przyciski"><h2>ZASIĘG USŁUG MOBILNYCH</h2></button></a>
+        </header>
+
+        
+        <article id="ONAS" class="article" style="width: 100%; padding-bottom: 40px;background-color: #000000; height: 370px;">
+            <h1 style="margin-left: 50px; padding-top: 20px;">O NAS</h1>
+            <img src="ONAS.jpg" style="float: left; margin:0; display: block;width: 300px;height: 300px; margin-left: 50px;margin-right: 50px;">
+            <h3 style="margin-right: 50px; line-height: 1.6; font-weight: normal;">Nazywam się Marta Adamek i jako twórczyni marki „Wyczesani Mobilnie” udowadniam, że luksusowa usługa fryzjerska nie musi wiązać się z wizytą w głośnym salonie. Moja praca to połączenie wieloletnią pasji, rzemiosła i nieustannego rozwoju na profesjonalnych szkoleniach fryzjersko-wizażowych. Decydując się na moje usługi, nie trafiasz do przypadkowego stylisty – oddajesz swoje włosy i wizerunek w ręce jednej, w pełni zaangażowanej profesjonalistki. Dbamy o relację i zaufanie, dlatego każdą wizytę zaczynam od szczegółowej rozmowy o Twoich potrzebach. Łączę techniczne umiejętności z intuicją, tworząc stylizacje, w których moje klientki czują się piękne, pewne siebie i autentyczne. Twój dom staje się moim prywatnym atelier, w którym cała uwaga jest skupiona wyłącznie na Tobie.</h3>
+        </article>
+        <article id="PEŁNA" class="article" style="width: 100%; padding-bottom: 40px;background-color: #064b2e; height: 450px;">
+            <h1 style="margin-left: 50px; padding-top: 20px;">PEŁNA OFERTA USŁUG</h1>
+            <img src="2.jpg" style="float: left; margin:0; display: block;width: 500px;height: 330px; margin-left: 50px;margin-right: 50px;">
+            <h3 style="margin-right: 50px; line-height: 1.6; font-weight: normal;">Szeroki wachlarz zaawansowanych usług fryzjerskich realizowanych na poziomie renomowanego salonu premium. Oferta obejmuje precyzyjne strzyżenia geometryczne, nowoczesne techniki koloryzacji (w tym balayage, sombre oraz airtouch) oraz luksusowe rytuały głębokiej rekonstrukcji i pielęgnacji włosów. Każda usługa opiera się na profesjonalnych kosmetykach i jest indywidualnie dopasowywana do struktury Twoich włosów oraz kształtu twarzy, zapewniając spektakularny i trwały efekt w prywatnej atmosferze Twojego domu.</h3>
+        </article>
+        <article id="FRYZURY" class="article" style="width: 100%; padding-bottom: 40px;background-color: #2e0230; height: 450px;">
+            <h1 style="margin-left: 50px; padding-top: 20px;">FRYZURY</h1>
+            <img src="OFERTY.jpg" style="float: left; margin:0; display: block;width: 250px;height: 330px; margin-left: 50px;margin-right: 50px;">
+            <h3 style="margin-right: 50px; line-height: 1.6; font-weight: normal;">Poznaj najwyższy standard kreowania wizerunku, gdzie pasja spotyka się z mistrzowskim rzemiosłem. Oferujemy pełen wachlarz zaawansowanych usług fryzjerskich – od precyzyjnych cięć zgodnych z najnowszymi światowymi trendami, przez wielowymiarowe koloryzacje, aż po luksusowe rytuały głębokiej regeneracji struktury włosa. Każda wizyta rozpoczyna się od indywidualnej, szczegółowej konsultacji oraz analizy kondycji pasm, co pozwala nam stworzyć look idealnie dopasowany do Twojego kształtu twarzy, typu urody oraz stylu życia. Oddaj się w ręce certyfikowanych stylistów, którzy dbają o każdy, nawet najmniejszy detal.</h3>
+            </article>
+            <article id="PREMIUM" class="article" style="width: 100%; padding-bottom: 40px;background-color: #09086d; height: 450px;">
+            <h1 style="margin-left: 50px; padding-top: 20px;">STANDARD PREMIUM</h1>
+            <img src="PREMIUM.jpg" style="float: left; margin:0; display: block;width: 250px;height: 330px; margin-left: 50px;margin-right: 50px;">
+            <h3 style="margin-right: 50px; line-height: 1.6; font-weight: normal;"> Fryzjerstwo Mobilne Premium – profesjonalne usługi luksusowe z dojazdem bezpośrednio do Twojego domu lub biura. Oszczędzaj swój cenny czas i ciesz się pełnym komfortem oraz indywidualną opieką stylisty na najwyższym poziomie, bez pośpiechu i obecności osób trzecich. Usługi realizowane są z użyciem selektywnych kosmetyków, w promieniu około 20 km od Kleczewa (m.in. Konin, Słupca, Ślesin, Wilczyn). To bezkompromisowa wygoda i perfekcyjne rzemiosło w pełni dopasowane do Twojego planu dnia.</h3>
+</article>
+<article id="USŁUGI" class="article" style="width: 100%; padding-bottom: 40px;background-color: #5b610a; height: 450px;">
+            <h1 style="margin-left: 50px; padding-top: 20px;">ZASIĘG USŁUG</h1>
+            <img src="USŁUGI.jpg" style="float: left; margin:0; display: block;width: 250px;height: 330px; margin-left: 50px;margin-right: 50px;">
+            <h3 style="margin-right: 50px; line-height: 1.6; font-weight: normal;">Wygoda bez granic – profesjonalny salon fryzjerski na wyciągnięcie ręki. Usługi mobilne świadczone są z zachowaniem najwyższych standardów logistycznych, gwarantując zawsze punktualny przyjazd, pełne wyposażenie stanowiska oraz bezkompromisowy komfort w Twoim domu. Główną bazą operacyjną marki „Wyczesani Mobilnie” jest Kleczew. Aby zapewnić maksymalną efektywność oraz najwyższą jakość obsługi, regularny i sprawny dojazd do klientów realizowany jest w promieniu około 20 kilometrów. Strefa ta obejmuje w szczególności następujące lokalizacje oraz ich najbliższe okolice: Konin, Słupca, Ślesin i Wilczyn, Sompolno Planujesz metamorfozę, a Twoja miejscowość znajduje się tuż poza wyznaczoną strefą? Skontaktuj się ze mną indywidualnie – w przypadku większych zamówień, pakietów okolicznościowych lub rezerwacji dla kilku osób, chętnie dostosuję grafik i dojadę również do Ciebie.</h3>
+</article>
+
+        <!-- Dynamiczny przycisk powrotu na górę strony -->
+        <button onclick="scrollujDoGory()" id="btnGora" title="Wróć na górę">▲ Do góry</button>
+
+        <!-- Otwarcie znacznika skryptu, którego brakowało -->
+        <script>
+            // 1. PŁYNNE PRZEWIJANIE MENU DO SEKCJI
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const sekcjaDocelowa = document.querySelector(this.getAttribute('href'));
+                    if (sekcjaDocelowa) {
+                        sekcjaDocelowa.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // 2. KONTROLA WIDOCZNOŚCI PRZYCISKU "DO GÓRY"
+            const mojPrzycisk = document.getElementById("btnGora");
+            window.onscroll = function() {
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    mojPrzycisk.style.display = "block";
+                } else {
+                    mojPrzycisk.style.display = "none";
+                }
+            };
+
+            // 3. FUNKCJA POWROTU NA SAMĄ GÓRĘ STRONY
+            function scrollujDoGory() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+    </body>
+</html>
+
